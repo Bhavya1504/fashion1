@@ -1,1 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Products</h1>
+    
+    <div class="filter-container">
+        <div>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="">All</option>
+                <option value="T-shirt">T-shirt</option>
+                <option value="Jeans">Jeans</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Accessories">Accessories</option>
+                <option value="Bags">Outerwear</option>
+                <option value="Dresses">Dresses</option>
+                <option value="Bottoms">Bottoms</option>
+                <option value="Tops">Tops</option>
+            </select>
+        </div>
 
+        <div>
+            <label for="min-price">Min Price:</label>
+            <input type="number" id="min-price" placeholder="Min Price">
+        </div>
+
+        <div>
+            <label for="max-price">Max Price:</label>
+            <input type="number" id="max-price" placeholder="Max Price">
+        </div>
+
+        <div>
+            <label for="size">Size:</label>
+            <select id="size">
+                <option value="">All</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="color">Color:</label>
+            <input type="text" id="color" placeholder="Color">
+        </div>
+
+        <button id="apply-filters">Apply Filters</button>
+    </div>
+
+    
+    <div id="results"></div>
+
+    
+    <div id="pagination"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
